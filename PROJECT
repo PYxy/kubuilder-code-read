@@ -1,0 +1,16 @@
+domain: ljy.com
+layout:
+- go.kubebuilder.io/v3
+projectName: demo
+repo: ljy/demo/app
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: ljy.com
+  group: demo
+  kind: App
+  path: ljy/demo/app/api/v1
+  version: v1
+version: "3"
